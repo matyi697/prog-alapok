@@ -11,3 +11,18 @@ INPUT: o 4               INPUT:# 3
        oooo                     
        
 */
+
+#include <stdio.h>
+
+int main () {
+    char ch;                                //  mit
+    int times = 0;                          //  hányszor
+    scanf("%c %d", &ch, &times);            //  beolvassuk az adatat
+    for (int i = 1; i <= times; i++) {      //  haladunk lefele amig nem erjuk el a times-t
+        for (int m = 0; m < i; m++) {       //  minden sorban eggyel tobb karaktert irunk ki 
+            printf("%c", ch);               //  kiirjuk a karaktert
+        }  
+        printf("\n");                       //  minden sor vegen uj sort kezdunk
+    }
+    return 0;
+}
