@@ -15,3 +15,16 @@ INPUT: 1 10                 | Magyarázat:
        
 Kis segítség: menj végig a programmal az összes számon két ciklussal és úgy keresd a párokat.
 */
+
+#include <stdio.h>
+
+int main () {
+    int i1 = 0;
+    int i2 = 0;
+    scanf("%d %d", &i1, &i2);
+    for (int x = i1; x <= i2; x++)
+        for(int y = i1; y <= i2; y++) 
+            if ((x*x)-y == 0) 
+                printf("(%d, %d)\n", x, y);
+    return 0;
+}
