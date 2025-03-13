@@ -20,9 +20,6 @@ kesleltetes = 0.5
 
 time.sleep(5)
 
-#kezdo_kep = ImageGrab.grab()
-#kezdo_szin = kezdo_kep.getpixel((x_pixel, y_pixel))
-
 kezdo_szin = ImageGrab.grab().getpixel((x_pixel, y_pixel))
 
 for szam in range(0, 10000):
@@ -34,7 +31,7 @@ for szam in range(0, 10000):
     
     time.sleep(0.5)
     
-    uj_kep = ImageGrab.grab().getpixel((x_pixel, y_pixel))
+    uj_szin = ImageGrab.grab().getpixel((x_pixel, y_pixel))
     
     if uj_szin != kezdo_szin:
         print(kod)
